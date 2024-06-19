@@ -1,0 +1,14 @@
+go 1.16
+
+use (
+    ./cmd/berf
+    ./config
+    ./x/mymodule
+    ./wasm
+    ./evm
+    ./layer2
+    ./sharding
+    ./auth
+    ./pqcrypto
+    ./api
+)

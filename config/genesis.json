@@ -1,0 +1,53 @@
+{
+    "genesis_time": "2024-01-01T00:00:00Z",
+    "chain_id": "berf-1",
+    "initial_height": "1",
+    "consensus_params": {
+        "block": {
+            "max_bytes": "22020096",
+            "max_gas": "-1",
+            "time_iota_ms": "1000"
+        },
+        "evidence": {
+            "max_age_num_blocks": "100000",
+            "max_age_duration": "172800000000000"
+        },
+        "validator": {
+            "pub_key_types": ["ed25519"]
+        }
+    },
+    "app_state": {
+        "auth": {
+            "params": {
+                "max_memo_characters": "256",
+                "tx_sig_limit": "7",
+                "tx_size_cost_per_byte": "10",
+                "sig_verify_cost_ed25519": "590",
+                "sig_verify_cost_secp256k1": "1000"
+            }
+        },
+        "mymodule": {
+            "params": {
+                "param1": "default",
+                "param2": 0
+            }
+        },
+        "coin": {
+            "supply": "500000000",
+            "name": "berfcoin",
+            "symbol": "BERF",
+            "initial_distribution": {
+                "sale": {
+                    "amount": "250000000",
+                    "price_per_coin": "5"
+                },
+                "initial_holders": [
+                    {
+                        "address": "cosmos1...",
+                        "amount": "100000000"
+                    }
+                ]
+            }
+        }
+    }
+}
